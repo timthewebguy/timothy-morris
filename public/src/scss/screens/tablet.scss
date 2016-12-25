@@ -1,0 +1,19 @@
+.portfolioEntry {
+	height:100vh;
+}
+
+.portfolioEntry__image {
+	width:50vw;
+	height:100vh;
+}
+.portfolioEntry__description {
+	height:100vh;
+	width:50vw;
+}
+
+.portfolioEntry:nth-child(even) {
+	.portfolioEntry__description,
+	.portfolioEntry__image {
+		float:right;
+	}
+}

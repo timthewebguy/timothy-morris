@@ -1,0 +1,196 @@
+// Global CSS goes here
+
+body {
+	background-color:white;
+}
+
+.introduction {
+	width:100vw;
+	height:100vh;
+	position:relative;
+	z-index:1;
+}
+
+.introduction__inner {
+	position:fixed;
+	z-index:-1;
+	top:50%;
+	left:0%;
+	width:100vw;
+	text-transform:uppercase;
+	text-align:center;
+
+	h1 {
+		color:$grey;
+		font-size:1.5em;
+		font-weight:lighter;
+		margin:0;
+	}
+
+	h3 {
+		color:$red;
+		font-family:AptiferSlab;
+		font-size:0.7em;
+		margin:0;
+	}
+
+}
+
+.quote {
+	position:relative;
+	z-index:1;
+}
+
+.quote__inner {
+	font-family:AptiferSlab;
+	color:$grey;
+	font-size:2em;
+	max-width:9em;
+	border-left:0.2em solid $blue;
+	padding-left:0.5em;
+
+	span {
+		display:block;
+	}
+}
+
+.portfolio {
+	position:relative;
+	z-index:1;
+}
+
+.portfolio__backdrop {
+	width:100vw;
+	position:fixed;
+	top:50%;
+	left:0;
+	height:100vh;
+	background-color:$red;
+	z-index:-4;
+}
+
+.portfolio__backdropOpen {
+	height:100vh;
+}
+
+.portfolio__backdropText {
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	color:$grey;
+	text-transform:uppercase;
+	font-size:0.8em;
+	font-weight:bold;	
+}
+
+.portfolioEntry {
+	width:100vw;
+	@include clearfix;
+}
+
+.portfolioEntry__image {
+	width:100vw;
+	height:56vw;
+	margin:0;
+	float:left;
+	overflow:hidden;
+	position:relative;
+
+	div {
+		width:100%;
+		height:120%;
+		top:50%;
+		position:absolute;
+	}
+}
+
+.portfolioEntry__description {
+	width:100vw;
+	float:left;
+	background-color:$grey;
+	color:white;
+	display:flex;
+	align-items:center;
+	flex-flow:row wrap;
+}
+
+.portfolioEntry__descriptionInner {
+	width:100%;
+	padding:1em;
+	box-sizing:border-box;
+
+	h1 {
+		margin:0;
+		font-weight:lighter;
+		text-transform:uppercase;
+	}
+	h4 {
+		margin:0 0 1em;
+		font-family:AptiferSlab;
+		color:$grey;
+	}
+}
+
+.portfolioEntry__cta {
+	display:inline-block;
+	text-decoration:none;
+	font-size:0.5em;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:0.5em;
+	color:white;
+	background-color:$blue;
+	transition:background-color 0.15s $animation-easing-function;
+
+	&:hover {
+		background-color:darken($blue, 10%);
+	}
+}
+
+.portfolio__backdropClose {
+	margin-top:40vh;
+}
+
+.about {
+	position:relative;
+	z-index:1;
+}
+
+.about__backdrop {
+	width:100vw;
+	position:fixed;
+	top:50%;
+	left:0;
+	height:100vh;
+	background-color:$blue;
+	z-index:-3;
+}
+
+.about__backdropOpen {
+	height:100vh;
+}
+
+.about__backdropText {
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	color:$grey;
+	text-transform:uppercase;
+	font-size:0.8em;
+	font-weight:bold;	
+}
+
+.aboutPicture {
+	margin:0;
+
+	img {
+		display:block;
+		width:100%;
+		max-width:25em;
+		margin:0 auto;
+		height:auto;
+		box-shadow:0 0 0.5em transparentize(black, 0.7);
+	}
+}

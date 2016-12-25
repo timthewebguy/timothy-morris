@@ -1,0 +1,1 @@
+.portfolioEntry__description,.portfolioEntry__image{height:100vh;width:50vw}.portfolioEntry{height:100vh}.portfolioEntry:nth-child(even) .portfolioEntry__description,.portfolioEntry:nth-child(even) .portfolioEntry__image{float:right}

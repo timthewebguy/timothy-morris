@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timothy Morris</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="dist/css/app.min.css">
+</head>
+<body>
+		<header class="introduction panel">
+			<div class="introduction__inner animated" data-animation="{transform = 0.5:translateY(-50%), 1:translateY(-100%)},{opacity = 0.5:1, 0.8:0}">
+        <h1 class="animated" data-animation="{letter-spacing = 0.5:0.1em, 1:0.5em}">Timothy Morris</h1>
+        <h3 class="animated" data-animation="{letter-spacing = 0.5:0em, 1:0.5em}">Creative Digital Media</h3>
+      </div>
+		</header>
+    <section class="quote panel">
+      <blockquote class="quote__inner animated" data-animation="{opacity = 0.1:0, 0.3:1, 0.7:1, 0.9:0}">
+        <span class="animated" data-animation="{transform = 0:translateY(10%), 1:translateY(-10%)}" data-animation-easing="linear">
+          I develop unique web experiences with innovative techniques and creative touches.
+        </span>
+        
+      </blockquote>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__backdrop"></div>
+      <div class="portfolio__backdropText">Portfolio</div>
+      <div class="portfolio__backdropOpen panel">
+        <div class="animated" data-animation="{transform = 0.2:translateY(-50%) scaleY(0), 0.5:translateY(-50%) scaleY(1)}" data-animation-target=".portfolio__backdrop"></div>
+        <div class="animated" data-animation="{opacity = 0.2:0, 0.3:1, 0.5:1, 0.7:0},{letter-spacing = 0:0.2em, 0.7:0.5em}" data-animation-target=".portfolio__backdropText"></div>
+      </div>
+      <article class="portfolioEntry">
+        <figure class="portfolioEntry__image panel">
+          <div style="background:url(dist/img/dmd-site.jpg) center/cover" class="animated" data-animation="{transform = 0:translateY(-70%), 1:translateY(-30%)}" data-animation-easing="linear"></div>
+        </figure>
+        <div class="portfolioEntry__description">
+          <div class="portfolioEntry__descriptionInner">
+            <h1>UConn Digital Media</h1>
+            <h4>Web Development</h4>
+            <a href="#" class="portfolioEntry__cta">Read More</a>
+            <a href="#" class="portfolioEntry__cta">Visit Site</a>
+          </div>
+        </div>
+      </article>
+       <article class="portfolioEntry">
+        <figure class="portfolioEntry__image panel">
+          <div style="background:url(dist/img/key-designs.jpg) center/cover" class="animated" data-animation="{transform = 0:translateY(-70%), 1:translateY(-30%)}" data-animation-easing="linear"></div>
+        </figure>
+        <div class="portfolioEntry__description">
+          <div class="portfolioEntry__descriptionInner">
+            <h1>Key Designs</h1>
+            <h4>Web Design, Development</h4>
+            <a href="#" class="portfolioEntry__cta">Read More</a>
+            <a href="#" class="portfolioEntry__cta">Visit Site</a>
+          </div>
+        </div>
+      </article>
+      <div class="portfolio__backdropClose panel">
+        <div class="animated" data-animation="{opacity = 0.5:1, 1:0}" data-animation-target=".portfolio__backdrop"></div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__backdrop"></div>
+      <div class="about__backdropText">About</div>
+      <div class="about__backdropOpen panel">
+        <div class="animated" data-animation="{transform = 0.2:translateY(-50%) scaleY(0), 0.5:translateY(-50%) scaleY(1)}" data-animation-target=".about__backdrop"></div>
+        <div class="animated" data-animation="{opacity = 0.2:0, 0.3:1, 0.5:1, 0.7:0},{letter-spacing = 0:0.2em, 0.7:0.5em}" data-animation-target=".about__backdropText"></div>
+      </div>
+      <figure class="aboutPicture panel">
+        <img src="/dist/img/about-img.jpg" alt="Drone Picture" class="animated" data-animation="{opacity = 0.2:0, 0.4:1}">
+      </figure>
+      <article class="aboutText">
+        
+      </article>
+    </section>
+		<div style="height:100vh"></div>
+  <script src="dist/js/main.min.js"></script>
+</body>
+</html>
