@@ -353,44 +353,12 @@ td,
 th {
   padding: 0; }
 
-@font-face {
-  font-family: PlutoSans;
-  src: url(../fonts/PlutoSans-Heavy.otf);
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: PlutoSans;
-  src: url(../fonts/PlutoSans-HeavyItalic.otf);
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: PlutoSans;
-  src: url(../fonts/PlutoSans-Italic.otf);
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: PlutoSans;
-  src: url(../fonts/PlutoSans-Regular.otf);
-  font-weight: normal;
-  font-style: normal; }
-
-html {
-  font-family: PlutoSans; }
-
-@font-face {
-  font-family: AptiferSlab;
-  src: url(../fonts/AptiferSlab-Bold.otf);
-  font-weight: normal;
-  font-style: normal; }
-
 html {
   font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400)); }
 
 body {
-  background-color: white; }
+  background-color: white;
+  font-family: "mr-eaves-modern"; }
 
 .introduction {
   width: 100vw;
@@ -413,7 +381,7 @@ body {
     margin: 0; }
   .introduction__inner h3 {
     color: #B13721;
-    font-family: AptiferSlab;
+    font-family: "museo-slab";
     font-size: 0.7em;
     margin: 0; }
 
@@ -422,10 +390,12 @@ body {
   z-index: 1; }
 
 .quote__inner {
-  font-family: AptiferSlab;
+  font-family: "museo-slab";
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
   font-size: 2em;
   max-width: 9em;
+  line-height: 1em;
   border-left: 0.2em solid #2190B1;
   padding-left: 0.5em; }
   .quote__inner span {
@@ -499,7 +469,7 @@ body {
     text-transform: uppercase; }
   .portfolioEntry__descriptionInner h4 {
     margin: 0 0 1em;
-    font-family: AptiferSlab;
+    font-family: "museo-slab";
     color: rgba(0, 0, 0, 0.4); }
 
 .portfolioEntry__cta {
@@ -553,6 +523,100 @@ body {
     margin: 0 auto;
     height: auto;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3); }
+
+.aboutText {
+  max-width: 22em;
+  padding: 0 1em;
+  margin: 0 auto; }
+
+.aboutText p,
+.aboutText a {
+  color: white; }
+
+.about__backdropClose {
+  height: 40vh; }
+
+.contact {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+
+.contact__backdrop {
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 100vh;
+  background-color: #999999;
+  z-index: -1; }
+
+.contact__backdropOpen {
+  height: 100vh; }
+
+.contact__backdropText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.contactCards {
+  width: 12em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; }
+
+.contactCards__open {
+  height: 50vh; }
+
+.contactCard {
+  display: block;
+  background-color: white;
+  width: 5em;
+  height: 5em;
+  margin: 0.5em;
+  position: relative;
+  border-radius: 0.25em;
+  transform: scale(1);
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  float: left; }
+  .contactCard img {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    object-fit: contain;
+    opacity: 0.1; }
+  .contactCard span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #B13721;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+  .contactCard:hover {
+    transform: scale(0.95);
+    background-color: #B13721; }
+    .contactCard:hover span {
+      color: white; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  position: relative;
+  z-index: 5;
+  padding: 0.5em; }
+  .footer h4 {
+    margin: 0; }
 
 .u-floatRight {
   float: right; }
