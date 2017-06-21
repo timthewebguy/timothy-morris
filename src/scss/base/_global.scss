@@ -5,6 +5,51 @@ body {
 	font-family: "mr-eaves-modern";
 }
 
+.nav {
+	position: fixed;
+	z-index: 10;
+	top:50%;
+	right: 0;
+	width: 0.7em;
+	height: 2.5em;
+	transform:translate(-50%, -50%);
+}
+
+#navToggle {
+	display:none;
+}
+
+.nav__list {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.nav__toggle {
+	display:block;
+	cursor:pointer;
+	width:0.7em;
+	height: 2.5em;
+}
+
+.nav__toggleInput:checked ~ .nav__toggle {
+	background-color:red;
+}
+
+.nav__listItem {
+	list-style:none;
+	width:0.5em;
+	height:0.5em;
+	margin:0.25em 0.1em;
+	border-radius:100%;
+	background-color:$grey;
+}
+
+.nav__item {
+	opacity:0;
+	pointer-events:none;
+}
+
 .introduction {
 	width:100vw;
 	height:100vh;

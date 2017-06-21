@@ -1,0 +1,23 @@
+.portfolioEntry {
+	height:100vh;
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:stretch;
+	min-height:max-content;
+}
+
+.portfolioEntry__image {
+	width:50vw;
+	height:100%;
+	order:1;
+}
+.portfolioEntry__description {
+	height:100vh;
+	min-height:max-content;
+	width:50vw;
+	order:2;
+}
+
+.portfolioEntry:nth-child(even) {
+	flex-flow: row-reverse nowrap;
+}
